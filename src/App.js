@@ -25,7 +25,7 @@ const App = () => {
         }
         setDay(day);
         searchWeather('dodoma');
-    }, [classChange, setClassChange, day, setDay]);
+    }, [classChange, setClassChange, day, setDay, searchWeather]);
     return (
         <div className='app'>
             <div className='container'>
