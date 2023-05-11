@@ -26,7 +26,8 @@ const App = () => {
         }
         setDay(day);
         searchWeather('dodoma');
-    }, [classChange, setClassChange, day, setDay, searchWeather]);
+        // eslint-disable-next-line
+    }, [classChange, setClassChange, day, setDay]);
     return (
         <div className='app'>
             <div className='container'>
