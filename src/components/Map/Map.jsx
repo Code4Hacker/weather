@@ -29,7 +29,7 @@ const Map = ({ name }) => {
             <div className="current">
                 <div className="weather-box">
                    {
-                    name !== undefined || null ?  <iframe src={`https://maps.google.com/maps?q=${name.region}&t=&z=10&ie=UTF8&iwloc=&output=embed`} frameBorder="0"></iframe>: <iframe src={`https://maps.google.com/maps?q=africa&t=&z=10&ie=UTF8&iwloc=&output=embed`} frameBorder="0" title='map'></iframe>
+                    name !== undefined || null ?  <iframe src={`https://maps.google.com/maps?q=${name.region}&t=&z=10&ie=UTF8&iwloc=&output=embed`} frameBorder="0" title='map_loader'></iframe>: <iframe src={`https://maps.google.com/maps?q=africa&t=&z=10&ie=UTF8&iwloc=&output=embed`} frameBorder="0" title='map'></iframe>
                    }
                 </div>
             </div>
