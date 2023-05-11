@@ -7,7 +7,8 @@ const App = () => {
     const [class2, setClass2] = useState('col-sm-11');
     const [ add, setAdd ] = useState('');
     const [day, setDay] = useState(2);
-    const searchWeather = async (title) => { 
+   // eslint-disable-next-line 
+    let searchWeather = async (title) => { 
         const response = await fetch(`${API_GET}&q=${title}&days=${day}&aqi=no&alerts=no`);
         const data = await response.json();
         setAdd(data);
