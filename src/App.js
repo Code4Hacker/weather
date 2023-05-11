@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Home, Navigator, Highlights, Forecasts, Current, Map } from './components/index';
+import {  Navigator, Highlights, Forecasts, Current, Map } from './components/index';
 import './index.css';
 const API_GET = "http://api.weatherapi.com/v1/forecast.json?key=7be7340d2ec7456b842200425232801";
 const App = () => {
