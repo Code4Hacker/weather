@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {  Navigator, Highlights, Forecasts, Current, Map } from './components/index';
 import './index.css';
-const API_GET = "http://api.weatherapi.com/v1/forecast.json?key=7be7340d2ec7456b842200425232801";
+const API_GET = "https://api.weatherapi.com/v1/forecast.json?key=7be7340d2ec7456b842200425232801";
 const App = () => {
     const [classChange, setClassChange] = useState('col-sm-1');
     const [class2, setClass2] = useState('col-sm-11');
