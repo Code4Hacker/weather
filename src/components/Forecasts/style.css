@@ -1,0 +1,109 @@
+.flex{
+    display: flex;
+}
+.flex div{
+    width: 100%;
+}
+.flex div:nth-child(2){
+    text-align: end;
+}
+.flex div:nth-child(2) select{
+    appearance: none;
+    min-width: 60px;
+    background: var(--gray);
+    border: none;
+    outline: none;
+    padding: 2px;
+    border-radius: 50px;
+    color: var(--p-parent);
+    font-size: small;
+}
+.map .flex div:nth-child(2) select{
+    appearance: none;
+    min-width: 80px;
+    background: var(--gray);
+    border: none;
+    outline: none;
+    padding: 2px;
+    border-radius: 50px;
+    color: var(--p-parent);
+    font-size: small;
+}
+.selector{
+    position: relative;
+}
+.selector .checked{
+    margin-left: -5px;
+    position: absolute;
+    z-index: 1;
+    width: 10px;
+    transform: rotate(0deg);
+    left: calc(100% - 5%);
+}
+.forecasts .icons img{
+    filter: saturate(1);
+}
+.flex .icons{
+    width: 0px;
+}
+.flex p{
+    margin-top: 5px;
+}
+.current.forecasts .weather-time{
+    position: relative;
+    overflow-y: scroll;
+    height: 210px;
+    max-height: 210px;
+}
+::-webkit-scrollbar{
+    width: 1px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 1, 31, 0.692);
+    display: none;
+    border-radius: 50px;
+}
+.tomorrow{
+    position: fixed;
+    z-index: 2;
+    padding: 3px;
+    box-shadow: 0px 0px 10px 0px var(--trans);
+    background-color:rgba(0, 0, 0, 0.877);
+    width: 90%;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    margin: 10px;
+    top: 80%;
+    transform: translateY(-80%);
+}
+.tomorrow .icons img{
+    width: 50px !important;
+    height: 50px !important;
+    margin-top: 20px;
+}.tomorrow h1{
+    margin: 0px;
+    font-size: 2em;
+}
+.tomorrow h6{
+    font-size: 11px;
+}
+.tomorrow .th{
+    margin: 0px;
+    text-align: start;
+    margin-left: 70px !important;
+    background-color: rgba(102, 51, 153, 0);
+}
+.tomorrow .content:nth-child(3){
+    width: 190px !important;
+    position: relative;
+}
+.tomorrow .content:nth-child(3) img{
+    position: relative;
+    height: 100%;
+    margin-top: 10px;
+    object-fit: cover;
+    width: 150px;
+}
+.center{
+    text-align: center;
+}

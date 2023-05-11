@@ -1,0 +1,133 @@
+.navigator {
+    position: fixed;
+    width: 70px;
+    height: 96vh;
+    margin: 10px;
+    background-image: url(../Images/container/weather-web-dark-cover.png);
+    background-size: 500px;
+    background-position-y:500px;
+    background-position-x: center;
+    background-color: var(--trans);
+    border-radius: 20px;
+}.nav-objects {
+    position: relative;
+    background-color: var(--trans);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    margin: 0px;
+    overflow-x: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(50px);
+}
+.nav-objects .logo .icon{
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    margin-top: -5px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.nav-objects .logo .icon img{
+    width: 100%;
+    margin: 10px;
+    margin-left: 5px;
+    height: 100%;
+    position: relative;
+}
+.nav-objects .description{
+    font-size: small;
+    color: var(--p-parent);
+}
+.logo{
+    border-bottom: 1px solid var(--cc);
+    padding-bottom: 10px;
+}
+.side-tool li{
+    list-style: none;
+    margin: 10px;
+    color: var(--p-parent);
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    transition: .4s ease-in-out;
+    margin-left: -30px;
+    border-left: 4px solid transparent;
+}
+.side-tool li:hover{
+    list-style: none;
+    background: linear-gradient(90deg,var(--glass-color), var(--shadow));
+    border-left: 4px solid var(--parent);
+    margin-left: -20px;
+    color: var(--parent);
+}
+.side-tool ul{
+    position: relative;
+    margin-left: -10px;
+    width: 100%;
+}
+svg{
+    width: 20px;
+    height: 20px;
+}
+@media screen and (max-width:766px){
+    .navigator{
+        width: 60px;
+        z-index: 4;
+    }
+    .current{
+        margin: 10px;
+    }
+}
+@media screen and (max-width:576px){
+    .navigator{
+        width: 60px;
+        z-index: 4;
+    }
+    .current{
+        width: 80%;
+        float: right;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:456px){
+    .navigator{
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60px;
+        height: 60px;
+        z-index: 4;
+    }
+    .navigator:hover{
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60px;
+        height: 100%;
+        animation: 1s heightme ease-in-out;
+        z-index: 4;
+    }
+    @keyframes heightme{
+        0%{
+            height: 60px;
+        }
+        100%{
+            height: 100%;
+            display: block;
+        }
+    }
+    .navigator:hover ul{
+        animation: 1s heightme ease-in-out;
+    }
+    .current{
+        width: 95%;
+        float: right;
+        margin: 10px;
+    }
+    .tomorrow img{
+        width: 80px !important;
+    }
+}
